@@ -8,8 +8,7 @@
 
 있으면 정답에 반환, 없으면 주어진 수 -1 후 반환
 
-18.없는 숫자 더하기 ==> using System.Linq와 Sum을 사용한다.
-
+18.없는 숫자 더하기 ==> using System.Linq와 Sum을 사용한다.  
 주어진 1~10을 더한 값을 answer에 넣어주고, 그 후 Sum을 통해 numbers 배열안의 모든값을 더한만큼 answer을 빼준다.
 
 
