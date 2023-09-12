@@ -20,15 +20,6 @@ public class Solution {
             //각 단어의 길이만큼 반복
             for(int j = 0; j < temps[i].Length; j++)
             {
-                //짝수인 0의 경우를 제외
-                if(j == 0)
-                {
-                    //Char.ToUpper == 해당하는 문자를 대문자로 변경(i단어 배열의 j번째 문자)
-                    //Char.ToLower 해당 문자열 소문자로 
-                    answer += Char.ToUpper(temps[i][j]);
-                    //해당 반복에 한하여 종료
-                    continue;
-                }
                 //나머지 홀짝 번째의 단어 구분(0과 다르지 않음) 
                 if(j % 2 == 0)
                 {
