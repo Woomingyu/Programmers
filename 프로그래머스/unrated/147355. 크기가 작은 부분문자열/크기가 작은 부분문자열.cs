@@ -5,7 +5,7 @@ public class Solution {
         int answer = 0;
         
         
-        //p를 long으로 변환
+        //p를 long으로 변환후 저장
         long longP = long.Parse(p);
         
         //t길이에 p 길이만큼 뺀 값 EX) 12456, 356 = 2
