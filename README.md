@@ -62,3 +62,14 @@ Char.ToUpper(temp) & Char.ToLower(temp) 해당하는 문자(temp)를 각각 대�
 32.삼총사  
 삼중반복문을 통하여 모든 요소를 더해보았다.(각 반복에 i+1, i+2)  
 더 좋은 방법이 있는지 궁금했는데 다른사람의 풀이도 비슷했음
+
+
+33.크기가 작은 부분  
+코드보단 문제 해결의 이해해 좀 시간이 걸렸다.  
+주요 코드로는 이전에 20.가운데 글자 가져오기에서 사용했던 .Substring()를 사용했다.  
+이번엔 .Substring(시작지점, 끝 지점) 까지 입력받은 string을 잘라내는 역할을 수행하였다.  
+for (int i = 0; i <= t.Length - p.Length; i++) 반복을 통해 판별할 수 p 보다 t가 얼마나 더 긴지 확인&그만큼 반복  
+long temp = long.Parse(t.Substring(i, p.Length)); 반복 내부에서 string 잘라내기를 통해 i번째 에서 p의 길이만큼의 수를 잘라내서 가져옴  
+if (temp <= longP) answer++; 크기 판별 후 카운트 상승  
+
+
