@@ -73,3 +73,9 @@ long temp = long.Parse(t.Substring(i, p.Length)); 반복 내부에서 string 잘
 if (temp <= longP) answer++; 크기 판별 후 카운트 상승  
 
 
+35.시저 암호  
+StringBuilder의 Append [문자열 추가]를 이용해 +연산자를 최대한 줄일 수 있다.  
+temp += n%26;  if(temp > 'Z') temp -= 26; 의 과정을 통하여, 알파벳 내부에서만 순환하는 코드를 만들 수 있다.  
+temp는 받아온 문자열의 int 배열 변수이다.
+
+
