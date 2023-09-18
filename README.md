@@ -73,9 +73,23 @@ long temp = long.Parse(t.Substring(i, p.Length)); 반복 내부에서 string 잘
 if (temp <= longP) answer++; 크기 판별 후 카운트 상승  
 
 
+34.최소직사각형(다시 공부)
+
+
 35.시저 암호  
 StringBuilder의 Append [문자열 추가]를 이용해 +연산자를 최대한 줄일 수 있다.  
 temp += n%26;  if(temp > 'Z') temp -= 26; 의 과정을 통하여, 알파벳 내부에서만 순환하는 코드를 만들 수 있다.  
 temp는 받아온 문자열의 int 배열 변수이다.
+
+
+36.숫자 문자열과 영단어  
+해결 : 스위치 케이스를 쓰면 간단하지만, 다른 방식을 찾아서 써 보았다.     
+string Replace (old, new); ==> string, char 모두 사용 가능하다.  
+old 문자열을 new 문자열로 바꿔주는 메서드이다.  
+문자 => 숫자 변환은 이런식으로 해결했고, 숫자, 문자를 추가로 판별하는것은 TryParse를 통해 해결했다.  
+if(int.TryParse(s, out result)) // 여기서 result를 답안으로 반환했음.
+
+
+37.문자열 내 마음대로 정렬하기 (다시 공부)
 
 
