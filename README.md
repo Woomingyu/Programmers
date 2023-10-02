@@ -153,7 +153,7 @@ if(students[j][i%students[j].Length] == answers[i])
 
 
 48.소수 만들기
-3중 for문을 이용해 주어진 배열에서 나오는 모든 경우의 수를 계산하였다.  
+3중 for문을 이용해 주어진 배열에서 나오는 모든 경우의 수를 계산하였다.(계산하는 수가 3개이므로)  
         for(int i=0; i<nums.Length-2; i++)  
             for(int j=i+1; j<nums.Length-1; j++)  
                 for(int k=j+1; k<nums.Length; k++)  
