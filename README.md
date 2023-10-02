@@ -150,3 +150,10 @@ list의 Length가 3과 같은 경우(명예의 전당이 가득 찬 경우)에�
 2차원 배열과 이중반복문을 사용하였다.  
 특이사항으로는 정답과 학생의 답안 길이가 맞지 않는 경우를 위해 i%students[j].Length를 진행 후 학생의 점수에 반영했다.  
 if(students[j][i%students[j].Length] == answers[i])
+
+
+48.소수 만들기
+3중 for문을 이용해 주어진 배열에서 나오는 모든 경우의 수를 계산하였다.  
+        for(int i=0; i<nums.Length-2; i++)  
+            for(int j=i+1; j<nums.Length-1; j++)  
+                for(int k=j+1; k<nums.Length; k++)  
