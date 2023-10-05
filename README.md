@@ -157,3 +157,9 @@ if(students[j][i%students[j].Length] == answers[i])
         for(int i=0; i<nums.Length-2; i++)  
             for(int j=i+1; j<nums.Length-1; j++)  
                 for(int k=j+1; k<nums.Length; k++)  
+
+
+49.덧칠하기  
+반복문과 간단한 식을 통해서 구현하는 방법을 알 수 있었다.  
+num = (section[i] + m) - 1; // 칠해야 하는 끝부분의 값을 구해주는 식을 통해  
+반복->조건(조건 충족 시 계산식 -> 결과값 수정) 을 통해 문제 해결이 진행되었다.
