@@ -179,4 +179,5 @@ i / j == j로 1과 자기자신을 제외한 모든 약수를 판별하고, 이 
 이번 문제의 핵심은 using System.Linq; 를 통한 array.Contains(@) 사용이였다.  
 나는 string에서만 Contains를 사용 가능한 줄 알았는데 아니였다.  
 생각해보니 string도 엄밀하게 따지면 배열이니 같은 거였네  
-좀 고민이 있었던 주어진 배열과 일치하는 수 탐색은 if(lottos.Contains(win_nums[i])) 로 해결되었다.
+좀 고민이 있었던 주어진 배열과 일치하는 수 탐색은 if(lottos.Contains(win_nums[i])) 로 해결되었다.  
+또한 일치값 0인 경우를 고려해야 했는데, 각 변수(min,max) 는 개별적으로 처리되므로 각각 예외처리를 해주어야 했다.  
